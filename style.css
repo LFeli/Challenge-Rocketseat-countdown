@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+/* Reset & Base*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Images */
+
+.image-top{
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 133px;
+    background-image: url(./img/top-image.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.image-bottom{
+    position: absolute;
+    bottom: 0;
+
+    width: 100vw;
+    height: 133px;
+    background-image: url(./img/bottom-image.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.rocket{
+    max-width: 607px;
+    width: 100%;
+    max-height: 435px;
+    height: 100%;
+    background-image: url(./img/rocket.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+/* Content */
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.125rem;
+}
+
+.tittle{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--purple);
+
+    line-height: 54px;
+    letter-spacing: 0.105em;
+    text-transform: uppercase;
+}
+
+
+/* content countdown */
+.countdown{
+    text-align: center;
+}
+
+
+.wrapper-countdown{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1.25rem;
+}
+
+.countdown-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-text{
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--light-grey);
+}
+
+.countdown-days, .countdown-hour, .countdown-minutes, .countdown-seconds ,.spots{
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 6.75rem;
+    color: var(--black);
+}
+
+.spots{
+    padding-top: 15px;
+    margin: 0 0.5rem;
+}
+
+/* content subscribe */
+
+.subscribe-text{
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: var(--text-color);
+
+    margin: 2rem 0;
+}
+
+.subscribe-button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--purple);
+    color: #FFFFFF;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    cursor: pointer;
+}
+
+.subscribe-button:hover{
+    transition: 0.3s;
+    background-color: #5D55DB;
+}
